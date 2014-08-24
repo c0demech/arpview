@@ -1,0 +1,37 @@
+dante@tovah:(arpview)$ ./arpview
+socket(): Operation not permitted
+dante@tovah:(arpview)$ su
+Password:
+root@tovah:(arpview)# ./arpview  
+---[arpview]--------------------------------------------]
+
+****  ETHERNET Header  ****
+
+  eth_dst: FFFFFFFFFFFF
+  eth_src: 080046A76E35
+eth_proto: 0806
+
+**** ARP Header ****
+
+  arp_hrd: 0001
+arp_proto: 0800
+  arp_hln: 06
+  arp_pln: 04
+   arp_op: 0001
+  arp_sha: 080046A76E35
+  arp_dha: 000000000000
+  arp_sip: 0A0A0A17 (10.10.10.23)
+  arp_dip: 0A0A0A16 (10.10.10.22)
+
+****  Hex Dump  ****
+
+0000:  FF FF FF FF FF FF 08 00 46 A7 6E 35 08 06 00 01
+0010:  08 00 06 04 00 01 08 00 46 A7 6E 35 0A 0A 0A 17
+0020:  00 00 00 00 00 00 0A 0A 0A 16
+
+Bytes: 42
+----------------------------------------------------------
+                              s0ttle - [pacman@sawbox.net]
+
+root@tovah:(arpview)# 
+
